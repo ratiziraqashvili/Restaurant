@@ -1,0 +1,161 @@
+.special-cont {
+    background-color: var(--color-black);
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  
+  .special-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .special-title p {
+    font-family: var(--font-base);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 29.9px;
+  }
+  
+  .special-title h1 {
+    color: var(--color-golden);
+    font-family: var(--font-base);
+    font-size: 64px;
+    line-height: 83px;
+    font-weight: 600;
+  }
+  
+  .special-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  
+  .wine-and-beer {
+    color: #ffffff;
+    font-weight: 600;
+    font-family: var(--font-base);
+    line-height: 58.5px;
+    font-size: 45px;
+    font-weight: 600;
+  }
+  
+  .wines-title {
+    color: var(--color-golden);
+    font-family: var(--font-base);
+    font-weight: 700;
+    line-height: 29.9px;
+    font-size: 23px;
+    display: inline-block;
+    margin-right: 30px;
+  }
+  
+  .wine-price {
+    font-family: var(--font-base);
+    line-height: 29.9px;
+    font-size: 23px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-left: 30px;
+  }
+  
+  .special-img img {
+    width: 400px;
+  }
+  
+  .cocktail-tag {
+    display: block;
+    color: #aaaaaa;
+    line-height: 28px;
+    font-family: var(--font-alt);
+  }
+  .btn-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn {
+    font-family: var(--font-base);
+    background-color: var(--color-golden);
+    padding: 10px 30px 10px 30px;
+    color: black;
+    border: none;
+    font-weight: bold;
+    margin-top: 4rem;
+    cursor: pointer;
+  }
+  
+  /* Media Queries */
+
+  @media (max-width: 1024px){
+    .special-menu {
+        flex-direction: column;
+      }
+  }
+  @media (max-width: 767px) {
+    .special-title {
+      gap: 10px;
+    }
+  
+    .special-title p {
+      font-size: 18px;
+      line-height: 23.4px;
+    }
+  
+    .special-title h1 {
+      font-size: 40px;
+      line-height: 52px;
+    }
+  
+    .special-menu {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .special-img img {
+      width: 100%;
+    }
+  
+    .btn {
+      margin-left: 0;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .special-title p {
+      font-size: 26px;
+      line-height: 33.8px;
+    }
+  
+    .special-title h1 {
+      font-size: 72px;
+      line-height: 93.6px;
+    }
+  }
+  @media (max-width: 376px){
+    .wine-and-beer{
+        margin-left: 70px;
+        white-space: nowrap;
+        font-size: 35px;
+    }
+    .line-img{
+        width: 60px;
+    }
+    .wines-title{
+        font-size: 18px;
+    }
+    .wine-price{
+        font-size: 18px;
+    }
+    .cocktail-tag{
+        font-size: 14px;
+    }
+    .map-div{
+        margin-left: 30px;
+    }
+  }

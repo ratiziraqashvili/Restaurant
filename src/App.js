@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import Subscribe from './components/Subscribe';
+import Aboutus from './pages/Aboutus';
+import Chef from './pages/Chef';
+import Findus from './pages/Findus';
+import Home from './pages/Home';
+import Rating from './pages/Rating';
+import Slider from './pages/Slider';
+import Special from './pages/Special';
+import Video from './pages/Video';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div className='App'>
+    <Navbar />
+    <Home />
+    <Aboutus />
+    <Special />
+    <Chef />
+    <Video />
+    <Rating />
+    <Slider />
+    <Findus />
+    <Subscribe />
+    <Footer />
+  </div>
+);
 
 export default App;

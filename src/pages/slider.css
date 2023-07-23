@@ -1,0 +1,122 @@
+.slider-cont{
+    background-color: var(--color-black);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+.slider-div1{
+    padding-left: 5rem;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    padding-right: 3rem;
+}
+.slider-div1 span{
+    font-weight: 700;
+    font-family: var(--font-base);
+    line-height: 29.9px;
+    font-size: 23px;
+    color: #FFFFFF;
+    display: block;
+}
+.slider-div1 h1{
+    font-family: var(--font-base);
+    font-size: 64px;
+    line-height: 83.2px;
+    font-weight: 600;
+    color: var(--color-golden);
+}
+.slider-div1 p{
+    font-family: var(--font-alt);
+    line-height: 28px;
+    color: #AAAAAA;
+    width: 491px;
+}
+.slider-div1 button{
+    font-family: var(--font-base);
+    background-color: var(--color-golden);
+    padding: 8px 32px 8px 32px;
+    color: black;
+    border: none;
+    font-weight: bold;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.slider-div2{
+    overflow: hidden;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.slider-div2 img{
+    width: 301px;
+    height: 447px;
+    overflow-y: hidden;
+    margin: 0 !important;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+.slider-cont .slider-div2 .slick-slide {
+    margin-right: 0px; 
+  }
+
+  .slider-cont .slider-div2 .slick-slide img {
+    margin: 0 auto;
+  }
+ 
+  .slider-library .slick-slide {
+    position: relative;
+  }
+  .ig-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+  }
+  .slider-library .image-container:hover .ig-icon {
+    opacity: 1;
+  }
+  .slider-library .image-container:hover img {
+    filter: brightness(50%);
+  }
+  @media screen and (max-width: 1024px) {
+    .slider-cont {
+      grid-template-columns: 1fr;
+    }
+    .slider-div1 {
+      padding: 2rem; /* Adjust the padding to your preference */
+    }
+    .slider-div1 p {
+      width: 100%; /* Full width on smaller screens */
+    }
+    .slider-div2 img {
+      max-width: 100%; /* Make the images responsive within the container */
+      height: 400px;
+    }
+    .image-container {
+      margin: 0 auto; /* Center the image container */
+      max-width: 300px; /* Limit the image container width to prevent overflow */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .slider-div1 h1 {
+      font-size: 48px; /* Adjust font size to fit smaller screens */
+      line-height: 64px;
+    }
+    .slider-div2 img {
+        height: 400px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .slider-div1 h1 {
+      font-size: 36px; /* Further reduce font size for smaller screens */
+      line-height: 48px;
+    }
+  }
+  
+ 
+  

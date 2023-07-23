@@ -1,0 +1,228 @@
+.logo-img-spoons {
+    width: 210px;
+    margin-left: 10vh;
+    margin-top: 8vh;
+  }
+  .rating-cont{
+    padding-bottom: 5rem;
+  }
+  
+  .rating-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    margin-left: 3rem;
+  }
+  
+  .rating-div1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 4rem;
+    margin-left: 6rem;
+  }
+  
+  .spoon-award {
+    width: 50px;
+  }
+  
+  .rating-div1 span:nth-child(1) {
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 29.9px;
+    font-size: 23px;
+    font-family: var(--font-base);
+    display: block;
+  }
+  
+  .rating-div1 h1 {
+    color: var(--color-golden);
+    font-weight: 600;
+    font-weight: var(--font-base);
+    font-size: 64px;
+    line-height: 83px;
+    margin-bottom: 60px;
+  }
+  
+  .mapped-rating {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .reward-details {
+    margin-left: 2rem;
+  }
+  
+  .mapped-rating p {
+    color: var(--color-golden);
+    font-family: var(--font-base);
+    font-weight: 700;
+    line-height: 29.9px;
+    font-size: 23px;
+  }
+  
+  .mapped-rating span {
+    font-family: var(--font-alt);
+    line-height: 28px;
+    color: #AAAAAA;
+  }
+  
+  .reward-img {
+    width: 79px;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .rating-div2 {
+    margin-left: 5rem;
+  }
+  
+  .rating-div2 img {
+    width: 480px;
+    margin-left: 2rem;
+  }
+  @media screen and (min-width: 2560px){
+    .rating-div2 img{
+        margin-left: 300px;
+    }
+}
+  @media screen and (min-width: 1024px) and (max-width: 1366px) {
+    .rating-grid {
+      grid-template-columns: repeat(1, 1fr);
+      margin-left: 1rem;
+    }
+  
+    .rating-div1 {
+      margin-left: 1rem;
+    }
+  
+    .rating-div1 h1 {
+      font-size: 48px;
+      line-height: 60px;
+    }
+  
+    .mapped-rating {
+      flex-direction: column;
+    }
+  
+    .reward-details {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    .reward-img {
+      width: 60px;
+    }
+  
+    .rating-div2 {
+      margin-left: 1rem;
+    }
+  
+    .rating-div2 img {
+      width: 100%;
+      max-width: 500px;
+      margin-left: 12rem;
+    }
+    .row{
+        justify-content: space-around;
+    }
+  } 
+  @media screen and (min-width: 820px) and (max-width: 912px){
+    .rating-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: auto;
+        margin-left: 3rem;
+      }
+  }
+ @media screen and (max-width: 768px) {
+    .rating-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .rating-div1 {
+      margin-left: 1rem;
+    }
+  
+    .rating-div1 h1 {
+      font-size: 36px;
+      line-height: 48px;
+    }
+  
+    .mapped-rating {
+      flex-direction: column;
+    }
+  
+    .reward-details {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    .reward-img {
+      width: 60px;
+    }
+  
+    .rating-div2 {
+      margin-left: 10rem;
+      
+    }
+  
+    .rating-div2 img {
+      width: 100%;
+      margin-left: 0;
+      position: relative;
+      right: 140px;
+      
+    }
+  }
+  @media screen and (max-width: 426px){
+    .rating-div1{
+        margin-left: 0;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .reward-details span{
+        width: 250px;
+    }
+  }
+  @media screen and (max-width: 376px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 15px;
+      }
+  }
+  @media screen and (max-width: 321px){
+    .rating-div2 img {
+        width: 150px;
+        right: 120px;
+      }
+  }
+  @media screen and (max-width: 321px) {
+    .rating-div1{
+        width: 250px;
+    }
+    .rating-div2{
+        width: 200px;
+        margin: 0;
+    }
+    .rating-div2 img{
+        margin-left: 150px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+  }
+  @media screen and (max-width: 281px){
+    .rating-div1{
+        width: 200px;
+    }
+  }

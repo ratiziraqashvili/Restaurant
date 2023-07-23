@@ -1,0 +1,184 @@
+@import url('https://fonts.cdnfonts.com/css/bestermind');
+
+.chef-cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+
+.chef-div1 img {
+  width: 530px;
+  margin-left: 100px;
+}
+
+.chef-div2 {
+  padding-top: 60px;
+}
+
+.chef-div2 img:nth-child(2) {
+  width: 40px;
+  display: block;
+  margin-top: 10px;
+}
+
+.chef-div2 img:nth-child(4) {
+  width: 40px;
+}
+
+.chef-div2 span:first-child {
+  font-family: var(--font-base);
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 29.9px;
+  color: #ffffff;
+}
+
+.chef-div2 h1:nth-child(3) {
+  margin-bottom: 60px;
+  font-family: var(--font-base);
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 83.2px;
+  color: var(--color-golden);
+}
+
+.chef-div2 p:nth-child(5) {
+  display: inline-block;
+}
+
+.chef-div2 p:nth-child(5),
+.chef-div2 p:nth-child(6) {
+  color: #aaaaaa;
+  font-family: var(--font-alt);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 28px;
+  width: 600px;
+}
+
+.chef-div2 h2 {
+  color: var(--color-golden);
+  line-height: 41.6px;
+  font-size: 32px;
+  font-family: var(--font-base);
+  margin-top: 30px;
+}
+
+.chef-div2 span:nth-child(8) {
+  font-weight: 400;
+  font-family: var(--font-alt);
+  line-height: 28px;
+  color: #aaaaaa;
+}
+
+.chef-div2 h1:nth-child(9) {
+  font-family: Bestermind;
+  font-size: 64px;
+  line-height: 83.2px;
+  color: #aaaaaa;
+  margin-top: 50px;
+}
+
+/* Media Queries */
+@media (min-width: 1920px){
+    .chef-div1 img{
+        margin-left: 300px;
+    }
+}
+@media (max-width: 767px) {
+  .chef-cont {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 30px;
+  }
+
+  .chef-div1 img {
+    width: 100%;
+    max-width: 400px;
+    margin-left: 0;
+  }
+
+  .chef-div2 {
+    padding-top: 0;
+  }
+
+  .chef-div2 h1:nth-child(3) {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .chef-div2 p:nth-child(5),
+  .chef-div2 p:nth-child(6) {
+    width: 100%;
+  }
+
+  .chef-div2 h2 {
+    font-size: 26px;
+    line-height: 34px;
+    margin-top: 20px;
+  }
+
+  .chef-div2 span:nth-child(8) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .chef-div2 h1:nth-child(9) {
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .chef-cont {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 50px;
+    place-items: center;
+  }
+
+  .chef-div1 img {
+    width: 100%;
+    max-width: 400px; 
+    margin-left: 0;
+  }
+
+  .chef-div2 {
+    padding-top: 0;
+  }
+
+  .chef-div2 h1:nth-child(3) {
+    font-size: 50px;
+    line-height: 65px;
+    margin-bottom: 30px;
+  }
+
+  .chef-div2 p:nth-child(5),
+  .chef-div2 p:nth-child(6) {
+    width: 100%;
+    max-width: 300px;
+    font-size: 13px;
+  }
+
+  .chef-div2 h2 {
+    font-size: 26px;
+    line-height: 34px;
+    margin-top: 20px;
+  }
+
+  .chef-div2 span:nth-child(8) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .chef-div2 h1:nth-child(9) {
+    font-size: 50px;
+    line-height: 65px;
+    margin-top: 50px;
+  }
+}

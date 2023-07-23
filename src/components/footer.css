@@ -1,0 +1,122 @@
+.footer-grid {
+  display: flex;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+  margin-left: -4rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer1,
+.footer2,
+.footer3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.footer1 h2{
+   font-weight: 400;
+   font-family: var(--font-base);
+   line-height: 41.6px;
+   font-size: 32px; 
+   color: var(--color-golden);
+}
+.footer1 span{
+    font-family: var(--font-alt);
+    font-size: 16px;
+    line-height: 28px;
+    color: #aaaaaa;
+}
+.footer1 p:nth-child(4),
+.footer1 p:nth-child(3){
+    font-family: var(--font-alt);
+    line-height: 28px;
+    color: #aaaaaa;
+    font-size: 16px;
+}
+.footer2 div{
+    display: flex;
+    gap: 20px;
+}
+.footer2 h1{
+    text-transform: uppercase;
+    color: var(--color-golden);
+    line-height: 83.2px;
+    font-weight: 700;
+    font-size: 64px;
+}
+.footer2 span{
+    font-family: var(--font-alt);
+    color: #ffffff;
+    line-height: 28px;
+    display: block;
+    width: 430px;
+   text-align: center;
+}
+.footer2 svg{
+    color: #ffffff;
+    
+}
+
+.footer3 h2{
+    color: var(--color-golden);
+    font-family: var(--font-base);
+    line-height: 42px;
+    font-size: 32px;
+    font-weight: 400;
+}
+.footer3 p:nth-child(2),
+.footer3 p:nth-child(3),
+.footer3 p:nth-child(4),
+.footer3 p:nth-child(5)
+{
+    font-family: var(--font-alt);
+    color: #aaaaaa;
+}
+.last-footer{
+    color: #aaaaaa;
+    line-height: 28px;
+    font-family: var(--font-alt);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 7rem;
+}
+@media screen and (max-width: 768px) {
+    .footer-grid {
+      flex-direction: column;
+      gap: 40px;
+      padding: 3rem 2rem;
+      margin-left: 0;
+    }
+  
+    .footer1,
+    .footer2,
+    .footer3 {
+      text-align: center;
+    }
+  
+    .footer2 {
+      margin-top: 2rem;
+    }
+  
+    .footer2 img {
+      max-width: 80%;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .footer-grid {
+      padding-top: 10rem;
+      padding-bottom: 5rem;
+    }
+  
+    .footer1,
+    .footer2,
+    .footer3 {
+      gap: 30px;
+    }
+  
+    .footer2 div {
+      gap: 30px;
+    }
+  }
+  

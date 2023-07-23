@@ -1,0 +1,130 @@
+.sub{
+    background-color: var(--color-black);
+    padding-bottom: 4rem;
+    
+    display: flex;
+    justify-content: center;
+}
+.subscribe{
+    background-color: var(--color-black);
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    width: 1000px;
+    border-top: none;
+    border-right: 1px solid var(--color-golden);
+    border-left: 1px solid var(--color-golden);
+    border-bottom: 1px solid var(--color-golden);
+    
+}
+.subscribe span{
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 29.9px;
+    font-family: var(--font-base);
+    color: #ffffff;
+    display: block;
+}
+.subscribe img{
+    width: 47px;
+}
+.subscribe h1{
+    font-family: var(--font-base);
+    font-weight: 600;
+    line-height: 83px;
+    color: var(--color-golden);
+    font-size: 64px;
+}
+.subscribe p{
+    font-family: var(--font-alt);
+    line-height: 28px;
+    color: #ffffff;
+    margin-bottom: 3rem;
+}
+.subscribe input{
+    width: 635px;
+    height: 50px;
+    background-color: var(--color-black);
+    border: 1px solid var(--color-golden);
+    padding-left: 0.8rem;
+    color: #ffffff;
+}
+.subscribe input::placeholder{
+    color: #ffffff;
+    font-family: var(--font-base);
+}
+.subscribe button{
+    background-color: var(--color-golden);
+    padding: 10px 26px 10px 26px;
+    color: var(--color-black);
+    font-family: var(--font-base);
+    border: none;
+    font-weight: 700;
+    width: 120px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .sub {
+      padding-left: 1rem; 
+      padding-right: 1rem; 
+    }
+  
+    .subscribe {
+      width: 100%; 
+      border: none; 
+    }
+  
+    .subscribe img {
+      width: 30px; 
+    }
+  
+    .subscribe h1 {
+      font-size: 25px; 
+      white-space: nowrap;
+    }
+  
+    .subscribe input {
+      width: 250px; 
+    }
+    .subscribe button{
+
+    }
+  }
+  @media screen and (max-width: 450px){
+    .subscribe input{
+        width: 150px;
+    }
+  }
+  @media screen and (max-width: 450px){
+    .subscribe input{
+        width: 100px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .sub {
+      justify-content: center;
+    }
+  
+    .subscribe {
+      width: 1000px;  
+    }
+  
+    .subscribe img {
+      width: 47px; 
+    }
+  
+    .subscribe h1 {
+      font-size: 64px; 
+    }
+    .subscribe input {
+      width: 635px; 
+      max-width: 635px; 
+    }
+  }

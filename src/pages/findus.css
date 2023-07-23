@@ -1,0 +1,120 @@
+.findus-cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+}
+.findus1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 8rem;
+    justify-content: center;
+    gap: 10px;
+}
+.findus1 img{
+    width: 46px;
+}
+.findus1 span{
+    color: #ffffff;
+    font-weight: 700;
+    font-family: var(--font-base);
+    font-size: 23px;
+    line-height: 29.9px;
+    display: block;
+}
+.findus1 h1{
+    font-family: var(--font-base);
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 83px;
+    color: var(--color-golden);
+    margin-bottom: 4rem;
+}
+.findus1 h4{
+    font-family: var(--font-alt);
+    line-height: 28px;
+    color: #AAAAAA;
+    margin-bottom: 1rem;
+}
+.findus1 h2{
+    font-size: 23px;
+    font-family: var(--font-base);
+    line-height: 29.9px;
+    font-weight: 700;
+    color: var(--color-golden);
+}
+.findus1 p{
+    color: #ffffff;
+    line-height: 28px;
+    font-family: var(--font-alt);
+    font-weight: 400;
+}
+.findus1 h3{
+    color: #ffffff;
+    line-height: 28px;
+    font-family: var(--font-alt);
+    font-size: 16px;
+    font-weight: 400;
+}
+.findus1 button{
+    font-family: var(--font-base);
+    background-color: var(--color-golden);
+    padding: 10px 20px 10px 20px;
+    color: black;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100px;
+    margin-top: 3rem;
+}
+.findus2 img{
+    width: 560px;
+}
+@media screen and (max-width: 768px) {
+    .findus-cont {
+      grid-template-columns: 1fr;
+      justify-items: center; 
+      gap: 3rem; 
+    }
+  
+    .findus1 {
+      margin-left: 0; 
+      text-align: center;
+      align-items: center;
+    }
+  
+    .findus1 img {
+      margin-bottom: 1rem; 
+    }
+  
+    .findus2 img {
+      width: 100%; 
+    }
+  }
+  
+  
+  @media screen and (min-width: 1200px) {
+    .findus-cont {
+      gap: 6rem; 
+    }
+  }
+  @media screen and (min-width: 2000px) {
+    .findus-cont {
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+    }
+  
+    .findus1 {
+      margin-left: 8rem;
+      text-align: left;
+      align-items: flex-start;
+    }
+  
+    .findus2 img {
+      width: 70%;
+    }
+  }
+  

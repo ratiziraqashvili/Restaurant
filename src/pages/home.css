@@ -1,0 +1,108 @@
+.home{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    
+    background-color: var(--color-black);
+    padding-top: 80px;
+    padding-left: 140px;
+    padding-bottom: 100px;
+}
+.text-div span{
+    color: #FFFFFF;
+    font-family: var(--font-base);
+    line-height: 29px;
+    font-weight: 700;
+}
+.text-div h1{
+    color: var(--color-golden);
+    font-family: var(--font-base);
+    font-size: 90px;
+    line-height: 117px;
+    font-weight: 700;
+}
+.text-div p{
+    color: #AAAAAA;
+    line-height: 29px;
+    font-family: Open Sans;
+    width: 500px;
+}
+.text-div button{
+    font-family: var(--font-base);
+    background-color: var(--color-golden);
+    padding: 10px 20px 10px 20px;
+    color: black;
+    border: none;
+    font-weight: bold;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.text-div button:hover{
+    transform: scale(1.1);
+}
+.img-div img{
+    width: 70%;
+}
+@media screen and (min-width:2000px) {
+    .text-div{
+        margin-left: 100px;
+        margin-top: 120px;
+    }
+    .text-div h1{
+        font-size: 120px;
+        line-height: 150px;
+        width: 1000px;
+    }
+}
+@media screen and (max-width:1999px){
+    .text-div{
+        margin-top: 140px;
+    }
+}
+@media screen and (max-width:1700px){
+    .text-div{
+        margin-top: 80px;
+    }
+}
+@media screen and (max-width:1100px){
+    .home{
+        grid-template-columns: 1fr;
+    }
+    .text-div{
+        margin-bottom: 100px;
+    }
+    .img-div{
+        margin-left: 80px;
+    }
+}
+@media screen and (max-width:625px){
+    .text-div h1{
+        font-size: 60px;
+        line-height: 80px;
+    }
+    .text-div p{
+        font-size: 12px;
+        width: 280px;
+    }
+    .home{
+        padding-left: 30px;
+        padding-top: 0px;
+    }
+    .img-div img{
+        width: 100%;
+        margin-left: -55px;
+    }
+}
+@media screen and (max-width:280px){
+    .text-div h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .text-div p{
+        font-size: 12px;
+        width: 230px;
+    }
+}
